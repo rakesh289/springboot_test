@@ -1,0 +1,45 @@
+------------Users------------------
+[
+{
+"id": "1",
+"name": "John",
+"address": "Mumbai"
+},
+{
+"id": "2",
+"name": "Jane",
+"address": "Seattle"
+},
+{
+"id": "3",
+"name": "Smith",
+"address": "Edinburgh"
+}
+]
+
+
+
+------------Actions------------------
+
+[
+{
+"id": 1,
+"code": "APP",
+"description": "Approve",
+"user": {
+"id": "1",
+"name": "John",
+"address": "Mumbai"
+}
+},
+{
+"id": 1,
+"code": "MOD",
+"description": "Modify",
+"user": {
+"id": "1",
+"name": "John",
+"address": "Mumbai"
+}
+}
+]

@@ -2,9 +2,12 @@ package com.first.boot.domainentities;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
+import javax.persistence.Table;
 
 @Entity
+@Table(name="Action_Test")
 public class Action {
 
 	@Id
@@ -15,7 +18,14 @@ public class Action {
 	private String description;
 
 	@ManyToOne
+	@JoinColumn(name="userId")
 	private User user;
+	
+	
+
+	public Action() {
+		super();
+	}
 
 	public Action(Long id, String code, String description, User user) {
 		super();

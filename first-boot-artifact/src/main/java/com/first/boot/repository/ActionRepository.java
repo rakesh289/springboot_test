@@ -6,7 +6,7 @@ import org.springframework.data.repository.CrudRepository;
 
 import com.first.boot.domainentities.Action;
 
-public interface ActionRepository extends CrudRepository<Action, String> {
+public interface ActionRepository extends CrudRepository<Action, Long> {
 
-	public List<Action> findByUserId(String userId);
+	public List<Action> findByUserId(Long userId);
 }
